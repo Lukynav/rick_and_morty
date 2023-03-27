@@ -1,0 +1,19 @@
+nav{
+    width: 100vw;
+    background-color: #eee;
+    /* border-bottom:.1em solid #aaa;
+    box-shadow: .1em .1em .2em #ddd; */
+    
+}
+
+.nav__container{
+    width: 60em;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.links{
+    display: flex;
+    gap: 2em;
+}

@@ -1,0 +1,16 @@
+.link{
+    display: flex;
+    gap: .5em;
+    align-items: center;
+    padding: .5em;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.selected{
+    display: flex;
+    gap: .5em;
+    align-items: center;
+    padding: .5em;
+    border-bottom: .2em solid orange;
+}
