@@ -3,12 +3,12 @@ import styles from './Card.module.css'
 import TopCard from './TopCard/TopCard'
 
 const Card = (props) => {
-  const { imgUrl, name, status, species, gender, origin } = props
+  const { imgUrl, name, status, species, gender, origin, setCharacters, index } = props
 
   return (
     <article className={styles.article}>
 
-      <TopCard imgUrl={imgUrl} />
+      <TopCard imgUrl={imgUrl} index={index} setCharacters={setCharacters} />
 
       <div className={styles.allInfo}>
         <h3 className={styles.characterName}>{name}</h3>

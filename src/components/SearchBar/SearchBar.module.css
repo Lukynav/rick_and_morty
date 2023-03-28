@@ -1,0 +1,25 @@
+form{
+    width: 20em;
+    display: flex;
+    align-items: center;
+}
+
+form .search{
+    width: 18em;
+    height: 2em;
+    border: .15em solid #000;
+    border-right: none;
+    border-radius: .5em 0 0 .5em;
+    padding: 0 .5em;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+form .searchButton{
+   padding: .2em 1em;
+   height: 2em;
+    background-color: orange;
+    border: .15em solid #000;
+    border-radius: 0 .5em .5em 0;
+    font-family: 'Montserrat', sans-serif;
+}

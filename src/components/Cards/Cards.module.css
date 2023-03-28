@@ -1,7 +1,7 @@
-section{
+.cardSection{
     display: flex;
-    justify-content: space-between;
-    row-gap: 1.5em;
+    justify-content: flex-start;
+    gap: 1.5em;
     flex-wrap: wrap;
     width: 60em;
 }

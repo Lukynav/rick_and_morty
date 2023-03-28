@@ -1,14 +1,14 @@
 import styles from './TopCard.module.css'
 
-const TopCard = ({ imgUrl }) => {
+const TopCard = ({ imgUrl, setCharacters, index}) => {
   const onClose = () => {
-    console.log('onClose CLICKED!')
+    setCharacters(state => [...state.slice(0,index),...state.slice(index+1)])
   }
 
   return (
     <div>
-      <button onClick={onClose} className={styles.button}>
-        <img className='icon' src='./icons/save.svg' alt='save icon' />
+      <button onClick={onClose} className={styles.buttonClose}>
+        <img className='icon' src='./icons/delete.svg' alt='save icon' />
       </button>
       <img className={styles.img} src={imgUrl} alt='Rick and morty character' />
     </div>

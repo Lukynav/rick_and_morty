@@ -1,6 +1,10 @@
 nav{
     width: 100vw;
     background-color: #eee;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
     /* border-bottom:.1em solid #aaa;
     box-shadow: .1em .1em .2em #ddd; */
     

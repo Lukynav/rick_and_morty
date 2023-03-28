@@ -1,8 +1,9 @@
 import Link from './Link/Link'
 import styles from './Navegation.module.css'
 import LINKS_DATA from './Link/Links-data'
+import SearchBar from '../SearchBar/SearchBar'
 
-const Navegation = () => {
+const Navegation = ({setCharacters}) => {
   return (
     <nav className={styles.nav}>
 
@@ -17,7 +18,8 @@ const Navegation = () => {
             })
           }
         </div>
-
+        
+        <SearchBar setCharacters={setCharacters}/>
       </div>
 
     </nav>

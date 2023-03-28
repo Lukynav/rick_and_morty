@@ -1,15 +1,16 @@
+import { useState } from 'react'
 import Cards from './components/Cards/Cards'
 import Navegation from './components/Navegation/Navegation'
-import data from './data'
 
 const App = () => {
+  const [characters, setCharacters] = useState([])
   return (
     <main>
 
-      <Navegation />
+      <Navegation setCharacters={setCharacters}/>
 
       <section>
-        <Cards characters={data} />
+        <Cards characters={characters} setCharacters={setCharacters} />
       </section>
 
     </main>
