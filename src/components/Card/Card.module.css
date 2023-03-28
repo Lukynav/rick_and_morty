@@ -49,18 +49,3 @@ article{
     color: #000;
     font-size: 1.15em;
 }
-
-button{
-    width: 2.5em;
-    height: 2.5em;
-    display: flex;
-    justify-content: center;
-    border-radius: 50%;
-    border: .15em solid #000;
-    align-items: center;
-    background-color: #fff;
-    position: absolute;
-    top:1em;
-    right: 1em;
-    
-}

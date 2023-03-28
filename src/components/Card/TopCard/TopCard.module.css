@@ -1,4 +1,4 @@
-button{
+.buttonClose{
     width: 2.5em;
     height: 2.5em;
     display: flex;
@@ -12,6 +12,10 @@ button{
     right: 1em;    
 }
 
+.buttonClose:hover{
+    background-color: #ff8383;
+}
+
 img{
     width: 100%;
     height: 14em;
@@ -20,7 +24,7 @@ img{
 
 
 @media (min-width: 350px) and (max-width: 550px) {
-    button{
+    .buttonClose{
         left: 1em;
     }
     img{
