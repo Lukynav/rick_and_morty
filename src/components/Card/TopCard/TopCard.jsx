@@ -8,7 +8,7 @@ const TopCard = ({ imgUrl, setCharacters, index }) => {
   return (
     <div>
       <button onClick={onClose} className={styles.buttonClose}>
-        <img className='icon' src='./icons/delete.svg' alt='save icon' />
+        <img className='icon' src='./icons/delete.svg' alt='delete icon' />
       </button>
       <img className={styles.img} src={imgUrl} alt='Rick and morty character' />
     </div>
