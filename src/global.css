@@ -7,10 +7,10 @@
     box-sizing: border-box;
 }
 
-section{
+.dinamicContent{
+    width: 60em;
     margin: auto;
-    padding: 2em 1em;
-
+    padding: 5em 1em;
 }
 
 .mini-icon{

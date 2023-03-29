@@ -1,8 +1,8 @@
 import styles from './TopCard.module.css'
 
-const TopCard = ({ imgUrl, setCharacters, index}) => {
+const TopCard = ({ imgUrl, setCharacters, index }) => {
   const onClose = () => {
-    setCharacters(state => [...state.slice(0,index),...state.slice(index+1)])
+    setCharacters(state => [...state.slice(0, index), ...state.slice(index + 1)])
   }
 
   return (
