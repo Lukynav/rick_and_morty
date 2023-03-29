@@ -13,11 +13,13 @@ form .search{
     padding: 0 .5em;
     outline: none;
     font-family: 'Roboto', sans-serif;
+    font-size: 1em;
 }
 
 form .searchButton{
    padding: .2em 1em;
    height: 2em;
+   font-size: 1em;
     background-color: orange;
     border: .15em solid #000;
     border-radius: 0 .5em .5em 0;
