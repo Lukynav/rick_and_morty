@@ -1,15 +1,35 @@
 .buttonClose{
-    width: 3em;
-    height: 3em;
+    width: 2.5em;
+    height: 2.5em;
     display: flex;
     justify-content: center;
     border-radius: 50%;
-    border: .15em solid #000;
+    /* border: .15em solid #333; */
+    border: none;
     align-items: center;
     background-color: #fff;
     position: absolute;
     top:1em;
     right: 1em;    
+}
+
+.buttonFavorite{
+    width: 2.5em;
+    height: 2.5em;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    /* border: .15em solid #333; */
+    border:none;
+    align-items: center;
+    background-color: #fff;
+    position: absolute;
+    top:1em;
+    right: 4em;    
+}
+
+.buttonFavorite:hover{
+    background-color: #fffd83;
 }
 
 .buttonClose:hover{
@@ -20,6 +40,7 @@ img{
     width: 100%;
     height: 14em;
     object-fit: cover;
+    border-radius: .5em;
 }
 
 

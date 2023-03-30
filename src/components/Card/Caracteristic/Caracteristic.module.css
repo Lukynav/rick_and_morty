@@ -1,4 +1,7 @@
 .characterInfo__caract{
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+
     display: flex;
     align-items: center;
     gap: .5em;
