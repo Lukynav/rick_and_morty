@@ -1,0 +1,36 @@
+.sectionAbout{
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutMe{
+    border: none;
+    width: 30em;    
+}
+
+.aboutMe h3{
+    color: orange;
+    font-size: 2.5em;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: .1em;
+    margin-top: 1em;
+}
+
+.aboutMe p{
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 1em;
+}
+
+.imageAbout{
+    border: none;
+    width: 22em;
+    display: grid;
+}
+
+.imageAbout img{
+    width: 100%;
+    height: 22em;
+    margin-top: 3em;
+}
