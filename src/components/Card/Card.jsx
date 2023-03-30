@@ -12,8 +12,8 @@ const Card = ({ index, characterObj }) => {
         <div className={styles.infoContainer}>
           <h3 className={styles.characterName}>{name}</h3>
           <div className={styles.caracteristics}>
-            <Caracteristic iconSrc='icons/heart.svg' caract={status} />
-            <Caracteristic iconSrc='icons/human.svg' caract={species} />
+            <Caracteristic iconSrc='icons/favorite.svg' caract={status} />
+            <Caracteristic iconSrc='icons/person.svg' caract={species} />
             <Caracteristic iconSrc='icons/gender.svg' caract={gender} />
           </div>
           <div className={styles.firstSeen}>
