@@ -1,0 +1,54 @@
+.formLogin{
+    width: 20em;
+    min-height: 80vh;
+    margin: 3em auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.formLogin h1{
+    font-size: 2em;
+    text-align: center;   
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 1em;
+}
+
+.formLogin label{
+    margin-bottom: .3em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    margin: .5em .3em;
+}
+
+.formLogin input{
+    width: 100%;
+    height: 2em;
+    border: .15em solid #ccc;
+    border-radius: .5em;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    padding: .2em 1em;
+    outline: none;
+}
+
+.loginBlock p{
+    color: red;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    margin: .5em .3em;
+}
+
+.loginBlock{
+    margin-top: 1em;
+}
+
+.formLogin button{
+    background-color: orange;
+    border: none;
+    padding: .5em;
+    border-radius: .5em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .9em;
+    color: #fff;
+    margin-top: 2.5em;
+}
