@@ -1,10 +1,10 @@
 import Cards from '../components/Cards/Cards'
 
-const Index = ({ characters, setCharacters }) => {
+const Index = () => {
   return (
-    <section>
-      <Cards characters={characters} setCharacters={setCharacters} />
-    </section>
+    <>
+      <Cards />
+    </>
   )
 }
 
