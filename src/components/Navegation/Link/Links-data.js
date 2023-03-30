@@ -1,7 +1,7 @@
 const LINKS_DATA = [
-  { name: 'Home', icon: 'icons/home.svg' },
-  { name: 'Explore', icon: 'icons/explore.svg' },
-  { name: 'Save', icon: 'icons/save.svg' }
+  { name: 'Home', icon: null, url: '/home' },
+  { name: 'Favorites', icon: null, url: '/Favorites' },
+  { name: 'About', icon: null, url: '/About' }
 ]
 
 export default LINKS_DATA

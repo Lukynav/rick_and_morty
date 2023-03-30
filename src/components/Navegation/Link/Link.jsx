@@ -1,14 +1,19 @@
+import { Link, useLocation } from 'react-router-dom'
 import styles from './Link.module.css'
 
-const Link = ({ name, icon, isSelected }) => {
+const Redirect = ({ name, icon, url }) => {
+  const location = useLocation()
+  let isSelected = false
+  if (location.pathname.toLowerCase() === `/${name.toLowerCase()}`) { isSelected = true }
   return (
-
-    <div className={isSelected ? styles.selected : styles.link}>
-      <img className='icon' src={icon} alt='icon' />
-      <p>{name}</p>
-    </div>
+    <Link to={url} style={{ textDecoration: 'none' }}>
+      <li className={`link ${isSelected ? styles.selected : styles.noSelected}`}>
+        {icon && <img className='icon' src={icon} alt='icon' />}
+        <p className={styles.linkText}>{name}</p>
+      </li>
+    </Link>
 
   )
 }
 
-export default Link
+export default Redirect
