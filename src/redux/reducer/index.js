@@ -1,4 +1,4 @@
-import { ADD_FAVORITE, DELETE_CHARACTER_ID, SET_CHARACTER_ID } from '../actions/actions-type'
+import { ADD_FAVORITE, DELETE_CHARACTER_ID, DELETE_FAVORITE, SET_CHARACTER_ID } from '../actions/actions-type'
 
 const initialState = {
   characters: [],
@@ -17,6 +17,10 @@ const rootReducer = (state = initialState, action) => {
 
       case ADD_FAVORITE:
         return {...state, favorites: [...state.favorites, action.payload] }
+
+      case DELETE_FAVORITE:
+        const favoriteFilter = state.favorites.filter(el => el.id !== action.payload)
+        return{...state, favorites: favoriteFilter}
 
       default:
       return { ...state }

@@ -1,4 +1,4 @@
-import { ADD_FAVORITE, DELETE_CHARACTER_ID, SET_CHARACTER_ID } from './actions-type'
+import { ADD_FAVORITE, DELETE_CHARACTER_ID, DELETE_FAVORITE, SET_CHARACTER_ID } from './actions-type'
 
 export const setCharacterId = (id) => {
   const TOTAL_CHARACTERS = 826
@@ -29,4 +29,8 @@ export const addFavorite = (id) => {
         payload: json
       }))
   }
+}
+
+export const removeFavorite = (id) => {
+  return {type:DELETE_FAVORITE, payload:id}
 }
