@@ -7,10 +7,10 @@
     box-sizing: border-box;
 }
 
-.dinamicContent{
-    width: 60em;
+main{
+    width: 56em;
+    min-height: 100vh;
     margin: auto;
-    padding: 5em 1em;
 }
 
 .mini-icon{
@@ -19,8 +19,8 @@
 }
 
 .icon{
-    width: 2em;
-    height: 2em;
+    width: 1.75em;
+    height: 1.75em;
 }
 
 /*
