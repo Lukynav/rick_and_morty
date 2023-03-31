@@ -11,9 +11,9 @@ const rootReducer = (state = initialState, action) => {
       return { ...state, characters: [...state.characters, action.payload] }
 
     case DELETE_CHARACTER_ID:
-      const index = action.payload
-      const { characters } = state
-      return { ...state, characters: [...characters.slice(0, index), ...characters.slice(index + 1)] }
+      const characterFilter = state.characters.filter(el => el.id !== action.payload)
+      const favFilter = state.favorites.filter(el => el.id !== action.payload)
+      return {...state, characters: characterFilter, favorites: favFilter}
 
       case ADD_FAVORITE:
         return {...state, favorites: [...state.favorites, action.payload] }
