@@ -10,15 +10,15 @@ const Card = ({ index, characterObj }) => {
   const favorites = useSelector(state => state.favorites)
   const [fav, setFav] = useState(false)
 
-  useEffect(()=>{
+  useEffect(() => {
     setFav(false)
     const isFav = favorites.filter(el => el.id === id)
-    if(isFav.length === 1) setFav(true)
-  },[favorites, fav, id])
+    if (isFav.length === 1) setFav(true)
+  }, [favorites, fav, id])
 
   return (
     <article className={styles.article}>
-      <TopCard imgUrl={imgUrl} index={index} id={id} fav={fav}/>
+      <TopCard imgUrl={imgUrl} index={index} id={id} fav={fav} />
       <Link to={`/detail/${id}`} style={{ textDecoration: 'none', color: '#000' }}>
         <div className={styles.infoContainer}>
           <h3 className={styles.characterName}>{name}</h3>

@@ -1,0 +1,24 @@
+.filterSort{
+    width: 100%;
+    border-radius: .5em;
+    background-color: #ccc;
+    display: flex;
+    gap:2em;
+    font-family: 'Roboto', sans-serif;
+    padding: .5em 1em;
+}
+
+.filterSort select{
+    border: none;
+    border-radius: .5em;
+    width: 10em;
+    padding: .25em 1em;
+    outline: none;
+}
+
+.filter{
+    align-items: center;
+    height: 2em;
+    display: flex;
+    gap: .5em;
+}
