@@ -7,7 +7,7 @@ export const setCharacterId = (id) => {
     if (id > TOTAL_CHARACTERS) return
     if (id <= 0) return
 
-    return fetch(`https://rickandmortyapi.com/api/character/${id}`)
+    return fetch(`http://localhost:3001/rickandmorty/character/${id}`)
       .then(res => res.json())
       .then(json => dispatch({
         type: SET_CHARACTER_ID,
@@ -22,7 +22,7 @@ export const deleteCharacterId = (id) => {
 
 export const addFavorite = (id) => {
   return function (dispatch) {
-    return fetch(`https://rickandmortyapi.com/api/character/${id}`)
+    return fetch(`http://localhost:3001/rickandmorty/character/${id}}`)
       .then(res => res.json())
       .then(json => dispatch({
         type: ADD_FAVORITE,
