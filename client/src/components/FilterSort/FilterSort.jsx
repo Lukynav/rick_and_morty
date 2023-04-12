@@ -4,11 +4,11 @@ import styles from './FilterSort.module.css'
 
 const FilterSort = () => {
   const dispatch = useDispatch()
-  const sort = (event)=>{
+  const sort = (event) => {
     dispatch(sortFavorites(event.target.value))
   }
 
-  const filter = (event)=>{
+  const filter = (event) => {
     dispatch(filterFavorites(event.target.value))
   }
   return (
@@ -24,7 +24,7 @@ const FilterSort = () => {
 
         <div className={styles.filter}>
           <p>Filter by:</p>
-          <select onChange={filter} >
+          <select onChange={filter}>
             <option>Male</option>
             <option>Female</option>
             <option>Genderless</option>

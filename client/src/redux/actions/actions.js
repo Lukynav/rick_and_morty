@@ -36,13 +36,13 @@ export const removeFavorite = (id) => {
 }
 
 export const sortFavorites = (sort) => {
-  return {type:SORT_FAVORITES, payload: sort}
+  return { type: SORT_FAVORITES, payload: sort }
 }
 
 export const filterFavorites = (sort) => {
-  return {type:FILTER_FAVORITES, payload: sort}
+  return { type: FILTER_FAVORITES, payload: sort }
 }
 
 export const resetFavorites = () => {
-  return {type: RESET_FAVORITES}
+  return { type: RESET_FAVORITES }
 }

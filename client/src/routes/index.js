@@ -3,4 +3,4 @@ import Detail from './detail/detail'
 import Favorites from './favorites/favorites'
 import Login from './login/login'
 
-export {About, Detail, Favorites, Login}
+export { About, Detail, Favorites, Login }

@@ -7,9 +7,9 @@ import { resetFavorites } from '../../redux/actions/actions'
 
 const Cards = ({ characters }) => {
   const dispatch = useDispatch()
-  useEffect(()=>{
+  useEffect(() => {
     dispatch(resetFavorites())
-  },[])
+  }, [])
   return (
     <section className={styles.cardSection}>
       {characters.map((character, index) => {
