@@ -1,11 +1,7 @@
 import { useSelector } from 'react-redux'
 import { Routes, Route } from 'react-router-dom'
-import Cards from './components/Cards/Cards'
-import Navegation from './components/Navegation/Navegation'
-import About from './routes/about/about'
-import Detail from './routes/detail/detail'
-import Favorites from './routes/favorites/favorites'
-import Login from './routes/login/login'
+import { Cards, Navegation } from './components'
+import { About, Detail, Favorites, Login } from './routes'
 
 const App = () => {
   const characters = useSelector(state => state.characters)
