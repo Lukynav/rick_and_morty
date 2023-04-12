@@ -1,15 +1,20 @@
-const http = require('http')
-const characters = require('./utils/data')
+const express = require('express');
+const server = express();
+const getCharacterById = require('./controller/getCharacterById')
+const PORT = 3001;
 
-http.createServer((req, res)=>{
-    res.setHeader('Access-Control-Allow-Origin', '*')
+server.get('/rickandmorty/character/:id',(req, res)=>{
+    const id = req.url.split('/').at(-1)
+    getCharacterById(res, id)
+})
 
-    if(req.url.includes('/rickandmorty/character')){
-        const id = req.url.split('/').at(-1)
+server.get('*',(req, res)=>{
+    res
+      .status(404)
+      .send('No existe la ruta :(')
+    console.log(URL+'/:id')
+})
 
-        const character = characters.filter(el => el.id === Number(id))
-
-        res.writeHead(200, {'Content-type':'application/json'}).end(JSON.stringify(character[0]))
-    }
-
-}).listen(3001, 'localhost')
+server.listen(PORT, () => {
+   console.log('Server raised in port: ' + PORT);
+});
